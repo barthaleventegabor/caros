@@ -8,6 +8,7 @@ public class App {
         Solution.placeCitroen();
         Solution.conatinLada();
         Solution.ladaToOtherList();
+        Solution.selectThings();
 
     }
 }

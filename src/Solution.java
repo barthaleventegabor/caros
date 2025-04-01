@@ -72,4 +72,30 @@ public class Solution {
 
     }
 
+    public static void selectThings() {
+        ArrayList<Car> expensiveList = new ArrayList<>();
+        ArrayList<Car> cheapList = new ArrayList<>();
+        // int j = 0;
+        // int k = 0;
+        for (Car car : carList) {
+            if (car.getPrice() >= 1000) {
+                expensiveList.add(car);
+            } else {
+                cheapList.add(car);
+            }
+        }
+        System.out.println("Drágák: ");
+        writeList(expensiveList);
+        System.out.println("Olcsók: ");
+
+        writeList(cheapList);
+    }
+
+    public static void writeList(ArrayList<Car> list) {
+        for (Car car : list) {
+            System.out.println(car.getPlate());
+            System.out.println(car.getBrand());
+            System.out.println(car.getPrice());
+        }
+    }
 }
