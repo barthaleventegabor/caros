@@ -93,9 +93,11 @@ public class Solution {
 
     public static void writeList(ArrayList<Car> list) {
         for (Car car : list) {
-            System.out.println(car.getPlate());
-            System.out.println(car.getBrand());
-            System.out.println(car.getPrice());
+            System.out.print(car.getPlate() + "-");
+            System.out.print(car.getBrand() + "-");
+            System.out.print(car.getPrice());
+            System.out.print("\n");
+
         }
     }
 }
